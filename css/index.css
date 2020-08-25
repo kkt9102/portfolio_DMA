@@ -1368,3 +1368,41 @@ body {
   transform:translateY(110%);
   transition: transform .5s;
 }
+
+
+/* alerted 커스텀 */
+.alerted.active {
+  display: block;
+}
+.alerted {
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 10;
+}
+.alerted > .alert-box {
+  padding: 50px;
+  background: #fff;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.alerted > .alert-box > .close-btn {
+  margin-top: 20px;
+}
+
+.alerted > .alert-box > .close-btn > .close-text {
+  padding: 5px 15px;
+  border:1px dotted #000;
+  cursor: pointer;
+}
+.alerted > .alert-box > .close-btn:active > .close-text {
+  background: #efefef;
+}
+/* alerted 커스텀 끝 */

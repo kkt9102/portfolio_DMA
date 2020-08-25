@@ -168,6 +168,12 @@ function top_move() {
   });
 }
 
+function alerted(){
+	$('.alerted > .alert-box > .close-btn > .close-text').click(function(){
+		$('.alerted').removeClass('active');
+	})
+}
+
 $(function () {
   backgroundIn();
   backgroundOut();
@@ -175,5 +181,5 @@ $(function () {
   top_move();
   slide_start_stop();
   scroll_action();
-
+  alerted();
 })
